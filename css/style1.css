@@ -222,6 +222,15 @@ nav {
  
 
 /*yazar carouselinin sonu*/
+/*müzik çaldırmak için*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* burda bitti*/
 .carousel-item {
     position: relative;
     text-align: center;
