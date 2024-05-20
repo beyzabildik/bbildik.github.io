@@ -110,3 +110,31 @@ document.addEventListener('DOMContentLoaded', function () {
   // Carousel konteynırını her 2 saniyede bir otomatik olarak sağa kaydır
   setInterval(scrollCarousel, 2000);
 });
+//arkadan müzik başlatmak için
+function getAudioElement() {
+  return document.getElementById('background-audio');
+}
+
+
+function playAudio() {
+  const audio = getAudioElement();
+  audio.play();
+}
+
+
+function pauseAudio() {
+  const audio = getAudioElement();
+  audio.pause();
+}
+
+function initializeEventListeners() {
+  const playButton = document.getElementById('play-button');
+  const pauseButton = document.getElementById('pause-button');
+
+  playButton.addEventListener('click', playAudio);
+  pauseButton.addEventListener('click', pauseAudio);
+}
+
+
+document.addEventListener('DOMContentLoaded', initializeEventListeners);
+
