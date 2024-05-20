@@ -68,6 +68,9 @@ $(document).ready(function () {
 
 
 //navbar
+var toggle = document.getElementById('toggle');
+var menuIcon = document.querySelector('.menu-icon');
+
 toggle.addEventListener('change', function () {
   if (toggle.checked) {
     menuIcon.textContent = '✖';
