@@ -280,6 +280,25 @@ nav {
 #scrollTopBtn:hover {
     background-color: #8900b371;
 }
+#scrollBottomBtn {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 80px;
+  background-color: #c14ece;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 99;
+}
+
+#scrollBottomBtn:hover {
+  background-color: #8900b371;
+}
 .text-muted {
     display: inline-block;
     margin-right: 20px;
