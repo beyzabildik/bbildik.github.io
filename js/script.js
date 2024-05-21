@@ -17,6 +17,10 @@ function scrollToTop() {
     window.scrollTo({top:0,behavior:"smooth"})
    
 }
+//Aşşağı kaydırma işlemi
+function scrollToBottom() {
+  window.scrollTo({top: document.body.scrollHeight, behavior: "smooth"});
+}
 //carousel
 ; $(document).ready(function () {
   var slideIndex = 0;
